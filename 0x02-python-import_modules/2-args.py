@@ -1,14 +1,22 @@
 #!/usr/bin/python3
-import sys
-def words():
-    num_of_arguments = len(sys.argv)[1:]
-    for word in num_of_arguments:
-        print("{}".format(word))
+from sys import argv
+arg_str_0 = "arguments."
+arg_str_1 = "argument:"
+arg_str_n = "arguments:"
+argc = len(argv) - 1
 
 
-    if num_of_arguments == 0:
-    print("{} arguments.".format(num_of_arguments))
-elif num_of_arguments == 1:
-    print("{} argument:".format(num_of_arguments))
-else:
-    print("{} arguments:".format(num_of_arguments))
+def print_args():
+    for i in range(1, len(argv)):
+        print("{:d}: {}".format(i, argv[i]))
+
+
+if __name__ == "__main__":
+    if (argc == 0):
+        print("{:d} {}".format(argc, arg_str_0))
+    elif (argc == 1):
+        print("{:d} {}".format(argc, arg_str_1))
+        print_args()
+    else:
+        print("{:d} {}".format(argc, arg_str_n))
+        print_args()
