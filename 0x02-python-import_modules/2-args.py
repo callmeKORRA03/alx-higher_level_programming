@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 import sys
+import sys
+def words():
+    num_of_arguments = len(sys.argv)[1:]
+    for word in num_of_arguments:
+        print("{}".format(word))
 
-count = len(sys.argv) - 1
-if count == 0:
-    print("0 arguments.")
-elif count == 1:
-    print("1 argument:")
+
+    if num_of_arguments == 0:
+    print("{} arguments.".format(num_of_arguments))
+elif num_of_arguments == 1:
+    print("{} argument:".format(num_of_arguments))
 else:
-    print("{} arguments:".format(count))
-for i in range(count):
-     print("{}: {}".format(i + 1, sys.argv[i + 1]))
+    print("{} arguments:".format(num_of_arguments))
