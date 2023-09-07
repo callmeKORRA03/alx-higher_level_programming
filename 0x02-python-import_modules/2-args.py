@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import sys
-import sys
 def words():
     num_of_arguments = len(sys.argv)[1:]
     for word in num_of_arguments:
