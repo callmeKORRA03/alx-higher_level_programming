@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-
-"""Define a class Square."""
+"""A Square class that will be used to instantiate an object"""
 
 
 class Square:
-    """Represent a square."""
+
+    """An ampty class Square that defines a square.
+    It currently has no attributes nor properties.
+    """
     pass
